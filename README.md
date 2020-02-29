@@ -8,6 +8,7 @@ See also [/examples/default] a complete working example.
 ## Usages
 ```
 module "iam_instance_profile" {
+    source = "DTherHtun/iip/aws
     name = var.name
     actions = [
         "s3:*",
