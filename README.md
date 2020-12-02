@@ -22,3 +22,32 @@ module "iam_instance_profile" {
 
 ## Outputs:
 The name of the iam_instance_profile: `module.iam_instance_profile.name`
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| actions | Actions allowed for this instance profile. | `list(string)` | <pre>[<br>  "logs:*"<br>]</pre> | no |
+| name | Name used for created resources. | `string` | `null` | no |
+| resources | Resources allowed to access by this instance profile. | `list(string)` | <pre>[<br>  "*"<br>]</pre> | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| name | Name of create instance profile |
+
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
